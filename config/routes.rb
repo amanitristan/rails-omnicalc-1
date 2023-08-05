@@ -1,11 +1,20 @@
 Rails.application.routes.draw do
-  get("/", { controller: "omnicalc1", action: "home" })
+  get("/", { controller: "omnicalc1form", action: "home" })
 
-  get("/", { controller: "omnicalc1", action: "square" })
+  get("/square/new", { controller: "omnicalc1form", action: "square" })
 
-  get("/", { controller: "omnicalc1", action: "square_root" })
+  get("/square_root/new", { controller: "omnicalc1form", action: "square_root" })
 
-  get("/", { controller: "omnicalc1", action: "payment" })
+  get("/payment/new", { controller: "omnicalc1form", action: "payment" })
 
-  get("/", { controller: "omnicalc1", action: "random" })
+  get("/random/new", { controller: "omnicalc1form", action: "random" })
+
+
+  get("/square/result", { controller: "omnicalc1result", action: "square" })
+
+  get("/square_root/result", { controller: "omnicalc1result", action: "square_root" })
+
+  get("/payment/result", { controller: "omnicalc1result", action: "payment" })
+
+  get("/random/result", { controller: "omnicalc1result", action: "random" })
 end
