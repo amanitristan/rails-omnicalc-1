@@ -1,4 +1,4 @@
-class Omnicalc1ResultsController < ApplicationController
+class Omnicalc1resultsController < ApplicationController
   def square
     @the_num = params.fetch("users_number").to_f
 

@@ -1,4 +1,4 @@
-class Omnicalc1FormsController < ApplicationController
+class Omnicalc1formsController < ApplicationController
   def home
     render({ template: "forms/homepage" })
   end
